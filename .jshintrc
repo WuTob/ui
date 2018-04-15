@@ -1,8 +1,8 @@
 {
     "globals": {
-        "$"       : true,
-        "window"  : true,
-        "document": true
+        "$"       : false,
+        "window"  : false,
+        "document": false
     },
     "strict"   : false,
     "curly"    : true,

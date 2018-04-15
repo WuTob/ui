@@ -1,10 +1,12 @@
-import 'jquery';
+var $ = require("jquery");
 
 $(document).ready(()=>{
-    let buttons = {
-        open_button    : $(".open_button"),
-        manage_button  : $(".manage_button"),
-        password_button: $(".password_button")
-    }
+    console.log("hello\n");
+    console.log($(".open_button").css("width"));
 
-})
+    $(".open_button").css("height", $(".open_button").css("width"));
+});
+
+$(window).resize(()=>{
+    $(".open_button").css("height", $(".open_button").css("width"));
+});
