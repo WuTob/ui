@@ -6,9 +6,21 @@ body{
 	width: 100%; height: 100%;
 }
 
-.open_button{
+.open_button, .manage_button, .password_button{
 	width: 30%;
-
 	border-radius: 50%;
+
+	position: absolute;
+}
+
+.open_button{
 	background-color: red;
+}
+
+.manage_button{
+	background-color: blue;
+}
+
+.password_button{
+	background-color: yellow;
 }
