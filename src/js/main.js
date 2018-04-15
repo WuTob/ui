@@ -4,9 +4,9 @@ import "../css/index.css"
 var $ = require("jquery");
 
 $(document).ready(()=>{
-    sync();
+    //sync();
 });
 
 $(window).resize(()=>{
-    sync();
+    //sync();
 });
