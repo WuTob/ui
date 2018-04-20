@@ -14,13 +14,11 @@
 		margin-top: -2.5vw;
 		margin-left: -2.5vw;
 
-	  opacity: 0;
 	  -webkit-transform: translate3d(0, -3000px, 0);
 	  transform: translate3d(0, -3000px, 0);
 	}
   
 	60% {
-	  opacity: 1;
 	  -webkit-transform: translate3d(0, 25px, 0);
 	  transform: translate3d(0, 25px, 0);
 	}
@@ -48,7 +46,7 @@
 
 @keyframes moveToLeft{
 	to {
-		opacity: .8;
+		opacity: .6;
 		left: 5%;
 		margin-left: 0;
 	}
@@ -56,21 +54,22 @@
 
 @keyframes moveToRight{
 	to {
-		opacity: .8;
+		opacity: .6;
 		right: 5%;
 		margin-right: 0;
 	}
 }
 
-@keyframes borderLoad{
-    from,
-    25%,
-    50%,
-    75%,
-    to{
-        
-    }
+@keyframes init{
+	from{
+		border-width: 5px;
+		border-color: transparent;
+	}
+	to{
+		
+	}
 }
+
 
 .bounceIn{
 	animation: 1s bounceInDown;
@@ -83,4 +82,6 @@
 .moveToRight{
 	animation: 1s moveToRight forwards;
 }
+
+
 
