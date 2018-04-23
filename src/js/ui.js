@@ -7,4 +7,9 @@ export function animate(){
         $(".open_button").addClass("moveToLeft");
         $(".password_button").addClass("moveToRight");
     }, 1000);
+
+    setTimeout(()=>{
+        $(".open_button").addClass("init");
+        $(".password_button").addClass("init");
+    }, 2000)
 }

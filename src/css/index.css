@@ -12,15 +12,17 @@ body{
 }
 
 .open_button, .manage_button, .password_button{
-	transform: translateZ(0);
-	width: 26vw;
+	transform: translateZ(0);  /*硬件加速*/
+
+	width : 26vw;
 	height: 26vw;
 
-	top: 50%;
+	top       : 50%;
 	margin-top: -13%;
 
 	border-radius: 50%;
-	position: absolute;
+
+	position: fixed;
 
 	background-color: whitesmoke;
 }
@@ -30,22 +32,22 @@ body{
 }
 
 .open_button{
-	z-index: -1;
-	left: 50%;
+	z-index    : -1;
+	left       : 50%;
 	margin-left: -13%;
 }
 
 .manage_button{
-	box-shadow: 0 1px 2px rgba(255,0,0,0.6);
-	z-index: 0;
-	left: 50%;
+	box-shadow : 0 1px 2px rgba(255,0,0,0.6);
+	z-index    : 0;
+	left       : 50%;
 	margin-left: -13%;
 
 	opacity: .6;
 }
 
 .password_button{
-	z-index: -1;
-	right: 50%;
+	z-index     : -1;
+	right       : 50%;
 	margin-right: -13vw;
 }

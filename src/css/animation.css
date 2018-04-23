@@ -62,12 +62,16 @@
 
 @keyframes init{
 	from{
-		border-width: 5px;
-		border-color: transparent;
-	}
+		border-width: 0;
+	} 
 	to{
-		
+		border-width: 5px;
+		border-color: linear-gradient(to right, #ddd6f3, #faaca8);
 	}
+}
+
+.init{
+	animation: 1s init infinite;
 }
 
 
