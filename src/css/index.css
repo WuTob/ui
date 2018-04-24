@@ -17,37 +17,33 @@ body{
 	width : 26vw;
 	height: 26vw;
 
-	top       : 50%;
-	margin-top: -13%;
+	top: calc(50% - 13vw);
 
 	border-radius: 50%;
 
 	position: fixed;
 
 	background-color: whitesmoke;
+
+	box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 1px 0 #6f6;
 }
 
 .open_button, .password_button{
-	opacity: 0;
+	z-index: -1;
+	opacity: 0;	/*开始先隐藏左右两个按钮*/
 }
 
 .open_button{
-	z-index    : -1;
-	left       : 50%;
-	margin-left: -13%;
+	left       : calc(50% - 13vw); /*将其居中，然后用动画移动指定位置*/
 }
 
 .manage_button{
-	box-shadow : 0 1px 2px rgba(255,0,0,0.6);
 	z-index    : 0;
-	left       : 50%;
-	margin-left: -13%;
+	left       : calc(50% - 13vw);
 
 	opacity: .6;
 }
 
 .password_button{
-	z-index     : -1;
-	right       : 50%;
-	margin-right: -13vw;
+	right       : calc(50% - 13vw); /*将其居中，然后用动画移动指定位置*/
 }

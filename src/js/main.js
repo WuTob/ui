@@ -5,7 +5,7 @@ import "../css/animation.css"
 var $ = require("jquery");
 
 $(document).ready(()=>{
-    UI.animate();
+    UI.init();
     //sync();
 });
 

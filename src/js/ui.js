@@ -1,6 +1,6 @@
 var $ = require("jquery");
 
-export function animate(){
+export function init(){
     $(".manage_button").addClass("bounceIn");
 
     setTimeout(()=>{
@@ -8,8 +8,4 @@ export function animate(){
         $(".password_button").addClass("moveToRight");
     }, 1000);
 
-    setTimeout(()=>{
-        $(".open_button").addClass("init");
-        $(".password_button").addClass("init");
-    }, 2000)
 }
