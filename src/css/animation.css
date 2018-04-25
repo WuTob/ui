@@ -56,6 +56,19 @@
 	}
 }
 
+@keyframes loadShadow{
+	from{
+		box-shadow: 0 0 15px 10px rgba(255, 0, 0, 0) inset;
+	}
+	to{
+		box-shadow: 0 0 15px 10px rgba(255, 0, 0, 0.8) inset;
+	}
+}
+
+.loadShadow{
+	animation: 1s loadShadow forwards;
+}
+
 .bounceIn{
 	animation: 1s bounceInDown;
 }

@@ -8,4 +8,9 @@ export function init(){
         $(".password_button").addClass("moveToRight");
     }, 1000);
 
+    setTimeout(()=>{
+        $(".open_button").addClass("loadShadow");
+        $(".password_button").addClass("loadShadow");
+    }, 2000)
+
 }

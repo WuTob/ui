@@ -29,7 +29,21 @@
                             loader: "css-loader"
                         }
                     ]
-                }
+                },
+                {  
+                    test:/\.ttf$/,  
+                    use: [  
+                             {  
+                                loader: "url-loader",  
+                                options: {  
+                                    limit:50000,   //小于50K的 都打包  
+                                    name:"[name].[ext]",  
+                                    publicPath:"font/", 
+                                    outputPath:"../font"
+                                }  
+                             }  
+                    ]  
+                },
             ]
         },
         externals: {
