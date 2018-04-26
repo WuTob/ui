@@ -9,8 +9,7 @@ export function init(){
     }, 1000);
 
     setTimeout(()=>{
-        $(".open_button").addClass("loadShadow");
-        $(".password_button").addClass("loadShadow");
+        $("span").addClass("show");
     }, 2000)
 
 }
