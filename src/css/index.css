@@ -11,6 +11,17 @@ body{
 	background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+span{
+	width: 20vw;
+	height: 5vw;
+	position: absolute;
+
+	text-align:center;
+
+	left: 0; right: 0; top: 0; bottom: 0;
+	margin: auto;
+}
+
 .open_button, .manage_button, .password_button{
 	transform: translateZ(0);  /*硬件加速*/
 
