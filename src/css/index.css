@@ -6,25 +6,47 @@ body{
 	margin: 0;
 	width: 100%; height: 100%;
 
-	background: #bc4e9c;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #2C3E50;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-span{
-	width: 20vw;
-	height: 5vw;
-	position: absolute;
+.title_box{
+    opacity: 0;
 
-	text-align:center;
+	width: 26vw;
+	height: 13vw;
 
-	left: 0; right: 0; top: 0; bottom: 0;
+	top: 8%;
+	left: 0;
+	right: 0;
 	margin: auto;
+	position: fixed;
+	text-align:center;
+}
 
+.plus_box {
+	position: fixed;
+	font-size: 100px;
+	width: 15%;
+	height: 15%;
+	text-align: center;
+	z-index: 100;
+	display: none;
 	opacity: 0;
 }
 
-.open_button, .manage_button, .password_button{
+.button:hover{
+    box-shadow: inset 0 0 15px 10px rgba(255, 175, 189, 0.6), 0 0 15px 10px rgba(255, 195, 160, 0.6)
+}
+
+.button:active{
+	opacity: 0.8;
+	box-shadow: inset 0 0 10px 5px rgba(255, 175, 189, 0.6), 0 0 20px 15px rgba(255, 195, 160, 0.6)
+}
+
+.team1_button, .team2_button, .team3_button{
 	transform: translateZ(0);  /*硬件加速*/
 
 	width : 26vw;
@@ -41,22 +63,45 @@ span{
 	box-shadow: inset 0 0 10px 5px rgba(255, 175, 189, 0.6), 0 0 10px 5px rgba(255, 195, 160, 0.6)
 }
 
-.open_button, .password_button{
+.team1_button, .team3_button{
 	z-index: -1;
 	opacity: 0;	/*开始先隐藏左右两个按钮*/
 }
 
-.open_button{
+.team1_button{
+    z-index    : 0;
 	left       : calc(50% - 13vw); /*将其居中，然后用动画移动指定位置*/
 }
 
-.manage_button{
+.team2_button{
 	z-index    : 0;
 	left       : calc(50% - 13vw);
 
 	opacity: .6;
 }
 
-.password_button{
+.team3_button{
+    z-index    : 0;
 	right       : calc(50% - 13vw); /*将其居中，然后用动画移动指定位置*/
+}
+
+.score_input{
+	position: fixed;
+
+	width: 15vw;
+	height: 13vh;
+
+	top: calc(50% + 26vh);
+}
+
+#team1{
+	left: 10%;
+}
+
+#team2{
+	left: calc(50% - 9vw);
+}
+
+#team3{
+	right: 10%;
 }

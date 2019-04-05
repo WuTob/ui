@@ -62,6 +62,13 @@
 	}
 }
 
+@keyframes up{
+	to{
+		opacity: 1;
+		transform: translate3d(0 ,-20vw ,0);
+	}
+}
+
 .show{
 	animation: 1s show forwards;
 }
@@ -76,4 +83,8 @@
 
 .moveToRight{
 	animation: 1s moveToRight forwards;
+}
+
+.up{
+	animation: 1s up;
 }

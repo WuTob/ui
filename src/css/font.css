@@ -3,7 +3,17 @@
     src: url("../font/Champagne & Limousines Bold.ttf");
 }
 
-span{
-    font-family: BtnFont;
-    font-size: 3vw;
+@font-face {
+    font-family: TileFont;
+    src: url("../font/文悦古典明朝体.ttf");
+}
+
+.title_box{
+    font-family: TileFont;
+    font-size: 4vw;
+    color: #ffffff;
+}
+
+.plus_box{
+    font-family: TileFont;
 }

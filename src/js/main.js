@@ -2,6 +2,7 @@ import * as UI from "./ui";
 import "../css/index.css"
 import "../css/animation.css"
 import "../css/font.css"
+import "../css/set.css"
 
 var $ = require("jquery");
 
