@@ -29,10 +29,14 @@ body{
 .plus_box {
 	position: fixed;
 	font-size: 100px;
-	width: 15%;
+	color: #F08080;
+
+	width: 20%;
 	height: 15%;
 	text-align: center;
+
 	z-index: 100;
+
 	display: none;
 	opacity: 0;
 }
@@ -76,6 +80,10 @@ body{
 .team2_button{
 	z-index    : 0;
 	left       : calc(50% - 13vw);
+
+	/*background: url("../img/teamB.jpg") no-repeat;
+    background-size: contain;
+	background-position: bottom center;*/
 
 	opacity: .6;
 }

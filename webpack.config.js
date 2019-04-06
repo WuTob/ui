@@ -5,7 +5,7 @@
             path: __dirname + "/assets/js",//打包后的文件存放的地方
             filename: "bundle.js"//打包后输出文件的文件名
         },
-        devtool: 'eval-source-map',
+        devtool: 'null',
         module: {
             rules: [
                 {
@@ -44,6 +44,10 @@
                              }  
                     ]  
                 },
+                {
+                    test: /\.(png|jpg)$/,
+                    loader: 'url-loader?limit=8192&name=../images/[hash:8].[name].[ext]'
+                }
             ]
         },
         externals: {
